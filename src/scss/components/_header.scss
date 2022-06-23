@@ -1,0 +1,13 @@
+.header {
+    padding: 23px 0;
+    &__container {
+        @include flex-all-sb;
+    }
+
+    &--main {
+            background: #ffffff;
+    }
+    &-nav {
+        margin-left: -120px;
+    }
+}

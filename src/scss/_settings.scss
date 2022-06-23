@@ -8,9 +8,13 @@ html {
   box-sizing: inherit;
 }
 
+body {
+    font-family: "Ubuntu" ,sans-serif;
+    font-weight: 400;
+}
+
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -80,8 +84,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 15px;
+  max-width: 1260px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -104,4 +108,88 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  margin: 0;
+  color: $ebony;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  span {
+    color: $primary;
+  }
+  &--home {
+    color: $white;
+  }
+}
+
+.main-descr {
+  font-size: 20px;
+  line-height: 150%;
+  color: $stormGray;
+
+  &--home {
+    color: $white;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+}
+
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 39px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 4px;
+  &--fill{
+    background-color:$primary;
+  }
+
+  &--stroke {
+    &-light {
+      border-color: $white;
+    }
+  }
+
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: $ebony;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.descr {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $stormGray;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.section--offset {
+  padding-top: 120px;
 }
